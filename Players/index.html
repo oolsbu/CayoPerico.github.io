@@ -1,0 +1,93 @@
+<!DOCTYpE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cayo perico earning calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" href="/CayoPerico.github.io/Bilder/gold-bars.svg" type="image/svg+xml">
+    <script src="../script.js" defer></script>
+</head>
+<body>
+    <div id="buttons">
+        <div id="tabsDiv">
+            <button class="tabs" onclick="TabClick('/CayoPerico.github.io/')">Main</button>
+            <button class="tabs" id="main" onclick="TabClick('/CayoPerico.github.io/Players')">players</button>
+            <button class="tabs" onclick="TabClick('/CayoPerico.github.io/Targets')">Targets</button>
+        </div>
+        <div class="selectBox">
+           <label for="players">Number of players:</label>
+           <select id="players">
+            <option value="1">1</option>
+            <option value ="2">2</option>
+            <option value="3">3</option>
+            <option value ="4">4</option>
+           </select>    
+        </div>
+        <div class="selectBox"  id="player1">
+            <label for="player1">player 1 cut:</label>
+            <input id="player1Input" type="number" value="55" min="15" max="75" step="5" onchange="updateMaxValues()">
+            <label for="player1" class ="percent">%</label>
+            </select>    
+         </div>
+         <div class="selectBox" id="player2">
+            <label for="player2">player 2 cut:</label>
+            <input id="player2Input" type="number" value="15" min="15" max="75" step="5" onchange="updateMaxValues()">
+            <label for="player2" class ="percent">%</label>
+        </select>    
+         </div>
+         <div class="selectBox"  id="player3">
+            <label for="player3">player 3 cut:</label>
+            <input id="player3Input" type="number" value="15" min="15" max="75" step="5" onchange="updateMaxValues()">
+            <label for="player3" class ="percent">%</label>
+        </select>    
+         </div>
+         <div class="selectBox"  id="player4">
+            <label for="player4">player 4 cut:</label>
+            <input id="player4Input" type="number" value="15" min="15" max="75" step="5" onchange="updateMaxValues()">
+            <label for="player4" class ="percent">%</label>
+        </select>    
+         </div>
+    </div>
+    <div class="map">
+        <img src="/CayoPerico.github.io/Bilder/Map.jpg" class="mapImage">
+    </div>
+    <div id="primaryTargetImageDiv">
+        <img src="/CayoPerico.github.io/Bilder/Necklace.png" id="primaryTargetImage">
+        <p class="info" id="primaryTargetText">primary Target</p>
+    </div>
+    <div id="targets">
+        <div id="primaryTarget">
+            <p class="infoBoxText">Select primary target</p>
+            <p class="infoBoxValue" id="primaryValue">0,000,000 $</p>
+        </div>
+    
+        <div id="secondaryTargets">
+            <p class="infoBoxText">Select secondary targets</p>
+            <p class="infoBoxValue" id="secondaryValue">0,000,000 $</p>
+        </div>
+    </div>
+    
+    <div id="playerEarnings">
+        <div id="primaryTarget">
+            <p class="infoBoxText" id="player1Earnings">Player 1 earnings</p>
+            <p class="infoBoxValue" id="player1Rewards">0,000,000 $</p>
+        </div>
+    
+        <div id="secondaryTargets">
+            <p class="infoBoxText" id="player2Earnings">Player 2 earnings</p>
+            <p class="infoBoxValue" id="player2Rewards">0,000,000 $</p>
+        </div>
+        <div id="primaryTarget">
+            <p class="infoBoxText" id="player3Earnings">Player 3 earnings</p>
+            <p class="infoBoxValue" id="player3Rewards">0,000,000 $</p>
+        </div>
+    
+        <div id="secondaryTargets">
+            <p class="infoBoxText" id="player4Earnings">Player 4 earnings</p>
+            <p class="infoBoxValue" id="player4Rewards">0,000,000 $</p>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cayo Perico earning calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" href="/CayoPerico.github.io/Bilder/gold-bars.svg" type="image/svg+xml">
+</head>
+<body>
+    <div id="buttons">
+        <div id="tabsDiv">
+            <button class="tabs" id="main" onclick="TabClick('/CayoPerico.github.io/')">Main</button>
+            <button class="tabs" onclick="TabClick('/CayoPerico.github.io/Players')">Players</button>
+            <button class="tabs" onclick="TabClick('/CayoPerico.github.io/Targets')">Targets</button>
+        </div>
+        <div class="selectBox">
+           <label for="hardMode">Hard mode:</label>
+           <select id="hardMode">
+            <option value="no">no</option>
+             <option value ="yes">yes</option>
+           </select>    
+        </div>
+        <div class="selectBox">
+            <label for="72Hours">within 72 hours:</label>
+            <select id="72Hours">
+             <option value="no">no</option>
+             <option value ="yes">yes</option>
+            </select>    
+         </div>
+         <div class="selectBox">
+            <label for="eliteChallenge">Elite challenge</label>
+            <select id="eliteChallenge">
+             <option value="no">no</option>
+             <option value ="yes">yes</option>
+            </select>    
+         </div>
+    
+         <div class="info">
+            <p >Pavel fee is 2% of total earnings</p>
+         </div>
+         <div class="info">
+            <p >Fencing fee is 10% of total earnings</p>
+         </div>
+    </div>
+    <div class="map">
+        <img src="/CayoPerico.github.io/Bilder/Map.jpg" class="mapImage">
+    </div>
+    <div id="primaryTargetImageDiv">
+        <img src="/CayoPerico.github.io/Bilder/Necklace.png" id="primaryTargetImage">
+        <p class="info" id="primaryTargetText">Primary Target</p>
+    </div>
+    <div id="targets">
+        <div id="primaryTarget">
+            <p class="infoBoxText">Select primary target</p>
+            <p class="infoBoxValue" id="primaryValue">0,000,000 $</p>
+        </div>
+    
+        <div id="secondaryTargets">
+            <p class="infoBoxText">Select secondary targets</p>
+            <p class="infoBoxValue" id="secondaryValue">0,000,000 $</p>
+        </div>
+    </div>
+    
+    <div id="playerEarnings">
+        <div id="primaryTarget">
+            <p class="infoBoxText" id="player1Earnings">Player 1 earnings</p>
+            <p class="infoBoxValue" id="player1Rewards">0,000,000 $</p>
+        </div>
+    
+        <div id="secondaryTargets">
+            <p class="infoBoxText" id="player2Earnings">Player 2 earnings</p>
+            <p class="infoBoxValue" id="player2Rewards">0,000,000 $</p>
+        </div>
+        <div id="primaryTarget">
+            <p class="infoBoxText" id="player3Earnings">Player 3 earnings</p>
+            <p class="infoBoxValue" id="player3Rewards">0,000,000 $</p>
+        </div>
+    
+        <div id="secondaryTargets">
+            <p class="infoBoxText" id="player4Earnings">Player 4 earnings</p>
+            <p class="infoBoxValue" id="player4Rewards">0,000,000 $</p>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
+

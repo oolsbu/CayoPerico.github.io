@@ -1,0 +1,166 @@
+@font-face {
+    font-family: 'Chalet Comprime';
+    src: local('Chalet Comprime Cologne Sixty'), local('Chalet-Comprime-Cologne-Sixty'),
+        url('font/ChaletComprime-CologneSixty.woff2') format('woff2'),
+        url('font/ChaletComprime-CologneSixty.woff') format('woff'),
+        url('font/ChaletComprime-CologneSixty.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    font-family: 'Chalet Comprime'; 
+    border: 2px solid red;
+    height: 97vh;
+}
+
+#buttons {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    height: 97vh;
+    width: 345px;
+    border: 2px solid red;
+}
+#tabsDiv {
+    position: relative;
+    padding: 10px;
+    width: 325px;
+    height: 26px;
+    overflow: hidden;
+}
+.tabs {
+    width: 105px;
+    height: 25px;
+    border: none;
+    background-color: #3B0401;
+    color: white;
+    font-family: inherit;
+    font-size: 18px;
+    border: 2px solid red;
+}
+
+#main {
+    background-color: red;
+}
+
+.tabs:hover {
+    background-color: red;
+}
+
+.selectBox, 
+.info {
+    margin: 10px;
+    margin-left: 20px;
+    width: 295px;
+    height: 26px;
+    background-color: black;
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.selectBox:hover, 
+.info:hover {
+    background-color: white;
+    color: black;
+}
+
+.selectBox label,
+.selectBox select,
+.selectBox p,
+.selectBox input,   
+.info p {
+    margin: 0;
+    padding-left: 10px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-family: inherit;
+    border: none;
+    outline: none;
+}
+.selectBox:hover label,
+.selectBox:hover select,
+.selectBox:hover p,
+.selectBox:hover input,
+.info:hover p {
+    background-color: white;
+    color: black;
+}
+
+
+#targets {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+#primaryTarget, 
+#secondaryTargets {
+    position: relative;
+    padding: 10px;
+    padding-top: 10px;
+}
+
+.infoBoxText {
+    width:  160.5px;
+    height: 24px;
+    background-color: red;
+    color: black;
+    padding-left: 10px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infoBoxValue {
+    width:  157px;
+    height: 24px;
+    background-color: black;
+    color: white;
+    border: 2px solid red;
+    padding-left: 10px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#playerEarnings {
+    position: absolute;
+    top: 20px;
+    left: 365px;
+}
+
+.map {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#primaryTargetImageDiv {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+}
+
+#primaryTargetImage {
+    width: 295px;
+    height: auto;
+    border: 2px solid red;
+    border-top: 6px solid red;
+}
+
+#primaryTargetText {
+    position: relative;
+    margin: 0;
+    transform: translateY(-4px);
+    text-indent: 20px;
+}
